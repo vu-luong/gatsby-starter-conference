@@ -1,5 +1,6 @@
 ---
 title: 'Keynote 2 Title'
+date: '2020-09-21T22:12:03.284Z'
 authors: 'Author 2'
 type: keynote
 ---
