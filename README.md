@@ -2,7 +2,7 @@
 
 > Gatsby starter for conference website
 
-![thumb](https://raw.githubusercontent.com/vu-luong/gatsby-starter-conference/dev/content/images/demo.png)
+![thumb](https://raw.githubusercontent.com/vu-luong/gatsby-starter-conference/master/content/images/demo.png)
 
 ## Installation
 
