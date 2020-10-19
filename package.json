@@ -2,7 +2,7 @@
   "name": "gatsby-starter-conference",
   "private": true,
   "description": "A Gatsby Starter for building conference website",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "author": "vubinhcht@gmail.com",
   "dependencies": {
     "@testing-library/cypress": "^7.0.1",
