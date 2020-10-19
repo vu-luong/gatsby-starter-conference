@@ -61,9 +61,10 @@
     "prismjs": "^1.21.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "conference-website"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "dev": "gatsby develop -H 0.0.0.0 -p 8000",
     "build": "gatsby build",
@@ -77,10 +78,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/vu-luong/gatsby-starter-conference"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/vu-luong/gatsby-starter-conference/issues"
   },
   "husky": {
     "hooks": {
