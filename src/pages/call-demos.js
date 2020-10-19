@@ -9,7 +9,6 @@ class CallDemos extends React.Component {
   render() {
 
     const post = this.props.data.post
-    console.log(post)
 
     return (
       <Layout location={this.props.location}>

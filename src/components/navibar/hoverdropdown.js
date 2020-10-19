@@ -14,16 +14,13 @@ class HoverDropdown extends React.Component {
 
   _handleMouseEnter = () => {
     this.setState(() => ({ show: true }))
-    // console.log("On Mouse Enter")
   }
 
   _handleMouseLeave = () => {
-    // console.log("On Mouse Leave")
     this.setState(() => ({ show: false }))
   }
 
   _handleMouseClick = () => {
-    // console.log("on click" + this.props.href)
     // navigate(this.props.href)
     this.setState(() => ({ show: !this.state.show }))
   }

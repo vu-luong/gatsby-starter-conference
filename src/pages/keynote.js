@@ -9,7 +9,6 @@ class Keynote extends React.Component {
   render() {
     const { posts } = this.props.data
 
-    console.log(posts)
     return (
       <div>
         <Layout location={this.props.location}>
@@ -19,10 +18,8 @@ class Keynote extends React.Component {
               <hr />
               {
                 posts.edges.map((edge) => {
-                  console.log(edge)
                   const frontmatter = edge?.node?.frontmatter
                   const authors = frontmatter?.authors.split(",")
-                  console.log(authors)
 
                   return (
                     <div key={edge.node.id}

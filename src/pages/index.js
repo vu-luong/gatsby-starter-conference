@@ -7,8 +7,6 @@ class IndexPage extends React.Component {
   render() {
     const { posts } = this.props.data
 
-    console.log(posts)
-
     return (
       <Layout location={this.props.location}>
         <div className="article">
