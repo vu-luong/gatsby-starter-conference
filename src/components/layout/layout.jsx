@@ -11,6 +11,8 @@ import headerImage from '../../../content/images/header.png';
 import logoImage from '../../../content/images/logo.png';
 import Navibar from '../navibar/navibar';
 
+import './layout.scss';
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);
@@ -37,25 +39,11 @@ class Layout extends React.Component {
     return (
       <div>
         <Helmet title="CONF2021" />
-        <header
-          id="header"
-          className="container"
-          style={{
-            position: 'relative',
-            top: 0,
-          }}
-        >
+        <header id="header" className="container">
           <span className="logo">
             <Image src={headerImage} alt="" fluid />
           </span>
-          <Row
-            style={{
-              position: 'absolute',
-              bottom: 0,
-              width: '100%',
-              height: '90%', // backgroundColor: "red"
-            }}
-          >
+          <Row id="row">
             <Col>
               <Link to="/">
                 <Image src={logoImage} alt="" fluid />

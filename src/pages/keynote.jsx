@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Badge } from 'react-bootstrap';
-import uuid from 'react-uuid';
 import Layout from '../components/layout/layout';
 
 function Keynote(props) {
@@ -15,35 +14,25 @@ function Keynote(props) {
       <Layout location={location}>
         <div className="article">
           <div className="container">
-            <h1 style={{ color: '#2c4f90' }}>Keynotes</h1>
+            <h1 className="page-title">Keynotes</h1>
             <hr />
             {posts.edges.map((edge) => {
               const frontmatter = edge?.node?.frontmatter;
               const authors = frontmatter?.authors.split(',');
 
               return (
-                <div
-                  key={edge.node.id}
-                  // className="content text-justify"
-                >
+                <div key={edge.node.id}>
                   <h2>{frontmatter.title}</h2>
-                  <time
-                    style={{ marginRight: 10 }}
-                    dateTime={frontmatter?.date}
-                  >
+                  <time className="keynote-time" dateTime={frontmatter?.date}>
                     {frontmatter?.date}
                   </time>
                   {authors.map((author) => (
-                    <Badge
-                      style={{ marginRight: 4 }}
-                      variant="secondary"
-                      key={uuid()}
-                    >
+                    <Badge className="keynote-badge" variant="secondary">
                       {author}
                     </Badge>
                   ))}
-                  <div style={{ marginTop: 8 }} />
                   <div
+                    className="keynote-content"
                     dangerouslySetInnerHTML={{
                       __html: edge.node.html || '',
                     }}
@@ -64,7 +53,7 @@ export default Keynote;
 export const query = graphql`
   query {
     posts: allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: ASC }
       filter: { frontmatter: { type: { eq: "keynote" } } }
     ) {
       edges {

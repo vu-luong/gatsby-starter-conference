@@ -13,7 +13,7 @@ function IndexPage(props) {
     <Layout location={location}>
       <div className="article">
         <div className="container">
-          <h1 style={{ color: '#2c4f90' }}>CONF2021</h1>
+          <h1 className="page-title">CONF2021</h1>
           <div
             dangerouslySetInnerHTML={{
               __html: posts.edges[0].node.html || '',

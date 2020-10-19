@@ -12,7 +12,7 @@ function ImportantDates(props) {
   return (
     <Layout location={location}>
       <Container>
-        <h1 style={{ color: '#2c4f90' }}>Important Dates</h1>
+        <h1 className="page-title">Important Dates</h1>
 
         <div
           dangerouslySetInnerHTML={{

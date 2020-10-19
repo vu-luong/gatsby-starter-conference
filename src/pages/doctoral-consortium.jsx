@@ -12,7 +12,7 @@ function DoctoralConsortium(props) {
   return (
     <Layout location={location}>
       <Container>
-        <h1 style={{ color: '#2c4f90' }}>Doctoral Consortium</h1>
+        <h1 className="page-title">Doctoral Consortium</h1>
         <hr />
         <div
           dangerouslySetInnerHTML={{

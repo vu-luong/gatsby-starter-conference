@@ -12,7 +12,7 @@ function Registration(props) {
   return (
     <Layout location={location}>
       <Container>
-        <h1 style={{ color: '#2c4f90' }}>Registration</h1>
+        <h1 className="page-title">Registration</h1>
         <hr />
         <div
           dangerouslySetInnerHTML={{

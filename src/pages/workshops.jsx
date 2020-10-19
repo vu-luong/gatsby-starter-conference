@@ -12,7 +12,7 @@ function Workshops(props) {
   return (
     <Layout location={location}>
       <Container>
-        <h1 style={{ color: '#2c4f90' }}>Workshops</h1>
+        <h1 className="page-title">Workshops</h1>
         <hr />
         <div
           dangerouslySetInnerHTML={{

@@ -12,7 +12,7 @@ function CallPapers(props) {
   return (
     <Layout location={location}>
       <Container>
-        <h1 style={{ color: '#2c4f90' }}>Call for Papers</h1>
+        <h1 className="page-title">Call for Papers</h1>
         <hr />
         <div
           dangerouslySetInnerHTML={{

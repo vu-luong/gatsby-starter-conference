@@ -1,11 +1,20 @@
+.outer {
+  margin-bottom: 100px;
+}
+
 #nav {
   width: 100%;
   position: absolute;
   z-index: 100;
 
-  &.alt1 {
+  &.alt {
     position: fixed;
     top: 0;
     z-index: 100;
   }
+}
+
+.nav-dropdown {
+  margin-left: 0;
+  margin-right: 4px;
 }

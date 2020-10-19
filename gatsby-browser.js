@@ -6,4 +6,4 @@ import 'bootstrap/js/dist/dropdown';
 // import "prismjs/themes/prism.css"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './src/scss/gatstrap.scss';
+import './src/scss/gatscon.scss';

@@ -10,14 +10,14 @@
 
 // Reassign color vars to semantic color scheme
 $theme-colors: (
-        primary: $gray-800,
-        secondary: $gray-600,
-        success: $green,
-        info: $cyan,
-        warning: $yellow,
-        danger: $red,
-        light: $gray-100,
-        dark: $gray-800,
+  primary: $gray-800,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
 ) !default;
 
 // Options
@@ -35,17 +35,16 @@ $enable-print-styles: true !default;
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-
 //.temp {
 //  display: flex; /* or inline-flex */
 //  justify-content: center;
 //}
 
 $container-max-widths: (
-        sm: 540px,
-        md: 640px,
-        lg: 890px,
-        xl: 900px,
+  sm: 540px,
+  md: 640px,
+  lg: 890px,
+  xl: 900px,
 ) !default;
 
 // Body
@@ -80,19 +79,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+// Custom global css here
+
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
+.page-title {
+  color: #2c4f90;
+}
 
-//img {
-//  margin-bottom: 15px;
-//  max-width: 100%;
-//}
-//
-//img:hover {
-//  animation: pulse 0.5s;
-//}
+.keynote-time {
+  margin-right: 10px;
+}
 
+.keynote-badge {
+  margin-right: 4px;
+}
+
+.keynote-content {
+  margin-top: 8px;
+}

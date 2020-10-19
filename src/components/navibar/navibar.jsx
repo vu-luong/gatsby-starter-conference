@@ -5,14 +5,14 @@ import HoverDropdown from './hoverdropdown';
 import './style.scss';
 
 const Navibar = ({ sticky, title }) => (
-  <div className="outter" style={{ marginBottom: 100 }}>
+  <div className="outer">
     <Navbar
       collapseOnSelect
       expand="lg"
       bg="dark"
       variant="dark"
       id="nav"
-      className={sticky ? 'alt1' : ''}
+      className={sticky ? 'alt' : ''}
     >
       <Container>
         <Container fluid>

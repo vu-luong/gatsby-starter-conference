@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavDropdown } from 'react-bootstrap';
+import './style.scss';
 
 class HoverDropdown extends React.Component {
   constructor(props) {
@@ -29,16 +30,13 @@ class HoverDropdown extends React.Component {
 
     return (
       <NavDropdown
+        className="nav-dropdown"
         id={id}
         title={title}
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
         onClick={this.handleMouseClick}
         show={show}
-        style={{
-          marginLeft: 0,
-          marginRight: 4,
-        }}
       >
         {children}
       </NavDropdown>
