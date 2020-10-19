@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import { siteMetadata } from '../../../gatsby-config';
 import Footer from '../footer/footer';
 
-import '../../scss/gatstrap.scss';
 import headerImage from '../../../content/images/header.png';
 import logoImage from '../../../content/images/logo.png';
 import Navibar from '../navibar/navibar';

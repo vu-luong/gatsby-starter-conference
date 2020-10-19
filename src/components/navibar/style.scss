@@ -1,0 +1,11 @@
+#nav {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+
+  &.alt1 {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+}

@@ -2,20 +2,17 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'gatsby';
 import HoverDropdown from './hoverdropdown';
+import './style.scss';
 
 const Navibar = ({ sticky, title }) => (
-  <div style={{ marginBottom: 100 }}>
+  <div className="outter" style={{ marginBottom: 100 }}>
     <Navbar
       collapseOnSelect
       expand="lg"
       bg="dark"
       variant="dark"
-      fixed={sticky ? 'top' : ''}
-      style={{
-        position: sticky ? 'fixed' : 'absolute',
-        width: '100%',
-        zIndex: 100,
-      }}
+      id="nav"
+      className={sticky ? 'alt1' : ''}
     >
       <Container>
         <Container fluid>
